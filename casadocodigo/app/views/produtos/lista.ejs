@@ -3,12 +3,14 @@
     <table>
         <tr>
             <td>id</td>
-            <td>nome</td>
+            <td>título</td>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Livro da casa do codigo</td>
-        </tr>
+        <% for (let i = 0; i < lista.length; i++ ) {%>
+            <tr>
+                <td><%=lista[i].id %></td>
+                <td><%= lista[i].titulo %></td>
+            </tr>
+        <%}%>
     </table>
     </body>
 </html>
